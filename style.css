@@ -40,7 +40,7 @@ h2.ques-num {
   margin: 0 auto; /* center content container */
 }
 
-/* Header section - cover page */
+/* -- Header section - cover page -- */
 header {
   background: linear-gradient(
     to bottom,
@@ -171,7 +171,7 @@ a.header-planet-hover {
 .background-planet-img {
   position: absolute;
   right: 0;
-  top: 50px;
+  top: 80px;
   max-height: 730px;
 }
 
@@ -188,9 +188,9 @@ a.header-planet-hover {
   font-size: 0.8rem;
   line-height: 1.2rem;
 }
-/* End of Header section - cover page */
+/* -- End of Header section - cover page -- */
 
-/* Questions & answers section */
+/* -- Questions & answers section -- */
 section {
   position: relative;
   min-height: 700px;
@@ -211,6 +211,7 @@ section > .container > .content {
   flex-direction: column;
 }
 
+/* Showing where the user it is by adding a progress indicator */
 section .progress {
   margin-bottom: 64px;
 }
@@ -329,8 +330,9 @@ section .progress-indicator .filled-pink {
     #ff55c6
   );
 }
+/* End of progress indicator */
 
-/* End of Questions reading progress indicator */
+/* -- End of Questions reading progress indicator -- */
 
 section > .container > .content > .text-content {
   margin-bottom: 64px;
@@ -531,7 +533,7 @@ section#question-13 {
 
 /* End of Questions & answers section */
 
-/* Footer */
+/* -- Footer -- */
 footer {
   background-color: #100602;
 }
@@ -581,4 +583,4 @@ footer .footer-content .social-media > a {
   height: 28px;
 }
 
-/* End of Footer */
+/* -- End of Footer -- */
