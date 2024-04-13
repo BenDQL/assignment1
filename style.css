@@ -175,6 +175,12 @@ a.header-planet-hover {
   max-height: 730px;
 }
 
+/* Variant for cover page */
+header > .background-planet-img {
+  top: 380px;
+  max-height: 580px;
+}
+
 .header-student {
   grid-column-start: 4;
   grid-column-end: span 1;
