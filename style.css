@@ -34,7 +34,7 @@ h2.ques-num {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1280px; /* When screen width > 1280px, keep the content center and with 1280px width */
   padding: 64px;
   position: relative;
   margin: 0 auto; /* center content container */
@@ -51,6 +51,7 @@ header {
     #552e52
   );
   position: relative;
+  overflow: hidden;
 }
 
 header > .container {
@@ -168,17 +169,32 @@ a.header-planet-hover {
   text-decoration: none;
 }
 
-.background-planet-img {
+/* If screen width < 1280px, crop the image; otherwise, show the image as much as possible */
+.planet-img-wrapper {
   position: absolute;
   right: 0;
-  top: 80px;
-  max-height: 730px;
+  top: 120px;
+  width: 25%;
+}
+
+.planet-img-wrapper > img {
+  max-width: 780px;
+  height: auto;
+  object-fit: cover;
+}
+
+.planet-img-wrapper > img.has-ring {
+  max-width: 850px;
 }
 
 /* Variant for cover page */
-header > .background-planet-img {
-  top: 380px;
+header .planet-img-wrapper {
+  top: 180px;
   max-height: 580px;
+}
+
+header .planet-img-wrapper > img {
+  max-width: 600px;
 }
 
 .header-student {
@@ -200,6 +216,7 @@ header > .background-planet-img {
 section {
   position: relative;
   min-height: 700px;
+  overflow: hidden;
 }
 
 section > .container {
