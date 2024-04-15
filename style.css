@@ -361,6 +361,20 @@ section > .container > .content > .text-content {
   margin-bottom: 64px;
 }
 
+section .text-content > .screenshot {
+  display: flex;
+  gap: 32px;
+  margin-top: 48px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+section .text-content > .screenshot > img {
+  object-fit: contain;
+  max-width: 480px;
+}
+
 /* Each section has different background colour and different small rocket position, to signal the section content transition */
 section#question-1 {
   /* gradient background colour */
